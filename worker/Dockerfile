@@ -2,7 +2,7 @@ FROM python:2.7
 MAINTAINER The Siz Team
 
 # Add Node's PPA + apt-get update
-RUN sh -c 'curl -sL https://deb.nodesource.com/setup_0.12 | bash -'
+RUN curl -sL https://deb.nodesource.com/setup_0.12 | bash -
 
 RUN apt-get install -y python-opencv python-numpy xz-utils gifsicle
 RUN pip install moviepy
