@@ -5,6 +5,8 @@ MAINTAINER The Siz Team
 RUN curl -sL https://deb.nodesource.com/setup_0.12 | bash -
 
 RUN apt-get install -y python-opencv python-numpy xz-utils gifsicle nodejs
+RUN npm install -g http-trigger
+RUN npm install -g logentries-piper
 RUN pip install moviepy
 RUN wget --quiet http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz && tar -xf ffmpeg-release-64bit-static.tar.xz && cp ffmpeg-*-64bit-static/ffmpeg /usr/local/bin/ && rm -rf ffmpeg-*-64bit-static ffmpeg-release-64bit-static.tar.xz
 RUN ln /dev/null /dev/raw1394

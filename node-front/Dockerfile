@@ -10,3 +10,5 @@ RUN apt-get update && \
     gem install oily_png && \
 
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+RUN npm install -g logentries-piper
